@@ -32,18 +32,13 @@ function Home() {
       <div className="books">
         {bookData.length > 0 && (
           <>
-            {/* map over the bookData array and render individual book components */}
+            {/* map over the bookData array to render individual book components */}
             {bookData.map((book) => (
               <div className="book" key={book.id}>
                 <div className="book-img-container">
                   <img
                     className="book-img"
-                    src={book.imageLinks?.thumbnail || ""}
-                    alt={
-                      book.imageLinks?.thumbnail
-                        ? undefined
-                        : "Image not available"
-                    }
+                    src={book.imageLinks.thumbnail}
                   />
                 </div>
                 <div className="book-details">

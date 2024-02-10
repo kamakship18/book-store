@@ -63,7 +63,7 @@ const SearchResults = () => {
           </p>
         ) : (
           
-          // map over the searchResults array and render individual book components
+          // map over the searchResults array to render individual book components
           searchResults.map((book) => (
             <div className="book" key={book.id}>
               <div className="book-img-container">
