@@ -1,0 +1,123 @@
+.navbar {
+    padding: 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    order: 1;
+  }
+  
+  .logo-image {
+    width: 166px; 
+    height: 65px;
+  }
+  
+  .searchbar-container {
+    order: 2;
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: 1px solid #eee;
+    box-shadow: rgba(0, 0, 0, 0.1) -1px 2px 4px 0px;
+    border-radius: 0.25rem;
+    max-width: 24rem;
+    width: 100%;
+  }
+  
+  .search:focus {
+    outline: 0px;
+    border: 1px solid #ddd;
+  }
+  
+  
+  .search-input {
+    width: 300px; 
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.25rem; 
+    border-radius: 0.25rem;
+    border: 1px solid #eee;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) -1px 2px 4px 0px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .search-btn img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 8px; 
+  }
+  
+  .search-btn span {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-btn:hover {
+    background-color: #f0f0f0; 
+    border-color: #ddd; 
+  }
+
+  
+  .registration-container {
+    order: 3;
+    height: 2rem; 
+    padding: 0.75rem 1.25rem; 
+    border: 1px solid #eee;
+    border-radius: 0.25rem;
+    background-color: #e1283a;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .registration-container:hover {
+    background-color: #563f6b; 
+  }
+  
+  .registration-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar-container {
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+  
+    .logo-container,
+    .searchbar-container,
+    .registration-container {
+      margin: 0.5rem 0;
+    }
+  
+    .search {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+  
