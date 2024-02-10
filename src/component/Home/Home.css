@@ -14,7 +14,7 @@
   }
   
   .book {
-    background: linear-gradient(to right, #ff9d85, #f1be96);
+    background: linear-gradient(to right, #ffeedd, #f1be96);
     width: 300px;
     margin: 20px;
     padding: 15px;
@@ -25,7 +25,7 @@
   
     &:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 20px black;
+      box-shadow: 0 0 20px red;
       background-color: #ffa5ab;
     }
   }
