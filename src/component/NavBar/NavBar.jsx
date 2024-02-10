@@ -4,14 +4,20 @@ import "./Navbar.css";
 import logoImage from '../assets/Kalvium-Logo.png'
 import Search from "../assets/Search.png";
 
+// navbar component definition
 const Navbar = () => {
+  // state for the search input
   const [search, setSearch] = useState("");
 
   return (
+    // navbar container
     <nav className="navbar">
       <div className="navbar-container">
+
         <div className="logo-container">
+
           <Link to="/" className="navbar-brand">
+        
             <img src={logoImage} alt="Logo" className="logo-image" />
           </Link>
         </div>
@@ -22,8 +28,10 @@ const Navbar = () => {
             type="text"
             placeholder="Search..."
             value={search}
+            // to update the search state on input change
             onChange={(e) => setSearch(e.target.value)}
           />
+    
           <Link to={`/search?q=${encodeURIComponent(search)}`}>
             <button className="search-btn" type="button">
               <span>
@@ -33,9 +41,11 @@ const Navbar = () => {
           </Link>
         </div>
 
+        {/* registration link section */}
         <div className="registration-container">
           <Link to="/registration">Registration</Link>
         </div>
+        
       </div>
     </nav>
   );
