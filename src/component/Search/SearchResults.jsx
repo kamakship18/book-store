@@ -51,7 +51,7 @@ const SearchResults = () => {
     if (searchQuery) {
       fetchData();
     }
-  }, [searchQuery]); // dependency array ensures this effect runs when the component mounts or when the search query changes
+  }, [searchQuery]); // dependency array is used to ensures that this effect runs only when the component mounts or when the search query changes
 
   return (
     <div className="container">
