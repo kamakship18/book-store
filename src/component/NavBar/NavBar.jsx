@@ -4,7 +4,6 @@ import "./Navbar.css";
 import logoImage from '../assets/Kalvium-Logo.png'
 import Search from "../assets/Search.png";
 
-// navbar component definition
 const Navbar = () => {
   // state for the search input
   const [search, setSearch] = useState("");
